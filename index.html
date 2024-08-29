@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Completo com JavaScript</title>
+    <link rel="stylesheet" href="sitecss.css">
+</head>
+<body>
+    <!-- Menu Móvel -->
+    <div class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle">☰ Menu</label>
+        <nav class="menu-nav">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </div>
+
+    <!-- Formulário com CPF e Telefone -->
+    <div class="form-container">
+        <form>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="Digite seu CPF">
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" placeholder="Digite seu telefone">
+
+            <label for="valor1">Valor 1:</label>
+            <input type="number" id="valor1">
+            
+            <label for="valor2">Valor 2:</label>
+            <input type="number" id="valor2">
+            
+            <label for="valor3">Valor 3:</label>
+            <input type="number" id="valor3">
+            
+            <button type="button" onclick="calcularRegraDeTres()">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado">Resultado: --</div>
+    </div>
+
+    <!-- Botão para Abrir Imagem no Modal -->
+    <button id="abrirImagem">Abrir Imagem no Modal</button>
+
+    <!-- Modal para Imagem -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" src="img.jpg" alt="Imagem">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Botão para Captura de Tela -->
+    <button id="capturarTela">Capturar Tela</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="parte3.js"></script>
+</body>
+</html>
